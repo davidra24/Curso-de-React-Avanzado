@@ -1,4 +1,4 @@
-const htmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = {
   output: {
     filename: 'app.bundle.js'
@@ -20,5 +20,5 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx']
   },
-  plugins: [new htmlWebpackPlugin({ template: 'src/index.html' })]
+  plugins: [new HtmlWebpackPlugin({ template: 'src/index.html' })]
 }
